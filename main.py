@@ -68,7 +68,8 @@ def get_quote():
 
     # Check if no topics are selected
     if not quotes_pool:
-        return jsonify({"message": "No topics selected"})
+        return jsonify({"quote": "No topics selected", "author": "No topics selected", "topic": "No topics selected"})
+
 
     # Select a random quote
     selected_quote = random.choice(quotes_pool)
